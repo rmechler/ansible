@@ -1,0 +1,9 @@
+---
+-   name: test play
+    hosts: all
+    tasks:
+        -   name: do an ls
+            command: ls
+            register: result
+
+        -   debug: var=result
